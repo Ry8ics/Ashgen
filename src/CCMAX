@@ -1,0 +1,21 @@
+C******************************************************************************
+C
+C
+C     DECLARE MAXIMUM ARRAY DIMENSIONS
+C
+C
+C     MAXNOD => MAXIMUM NUMBER OF JOINTS OR MEMBERS IN THE STRUCTURE
+C               
+C
+C     NB!! WHEN THIS COMMONBLOCK IS CHANGED ALL PROGRAMS USING
+C          THIS COMMONBLOCK NEED TO BE RECOMPILED IN ORDER TO
+C          AVOID SURPRISES. DO NOT CHOOSE TOO BIG VALUES OF THE ARRAY
+C          DIMENSIONS AS THIS MAY INCREASE THE CPU-TIME SIGNIFICANTLY.
+C
+C******************************************************************************
+C
+      INTEGER MAXNOD, MAXMEM, MAXSUP
+C
+      PARAMETER ( MAXNOD = 30000 ) 
+      PARAMETER ( MAXMEM = 30000 ) 
+      PARAMETER ( MAXSUP = 100 ) 
