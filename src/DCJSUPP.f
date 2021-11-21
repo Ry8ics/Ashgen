@@ -37,7 +37,7 @@ C
       INTEGER IFERR, IOUT, ISTAT, ISET,IEND,ILEN,IJOIN,IPSJNT,I
       CHARACTER*8 CJOIN,CPSJNT
       CHARACTER*(*) CERR, CITEM
-      LOGICAL  MATCH
+      LOGICAL  MATCH 
 C=======================================================================
 C
   100 CALL MOVEIP(IEND)
@@ -50,7 +50,7 @@ C
               WRITE (IOUT,CERR) '*** ERROR IN DECODING JOINTS'
               ISTAT = -1
               GOTO 200
-          ENDIF
+          ENDIF 
 C         
           IJOIN = IPSJNT(CJOIN)
 C         Store the joint with constraints
